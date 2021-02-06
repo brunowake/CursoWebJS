@@ -1,0 +1,13 @@
+o comando ' npm init' serve para criarmos o arquivo package.json do nosso projeto. 
+nesse arquivo contem varias especificacoes sobre o projeto.
+se usar o comando 'npm init -y', automaticamente o arquivo sera criado com todos requisitos preenchidos como sim
+
+pelo package.json eu consigo configurar todas as dependencias do meu projeto
+para instalar uma dependencia e configura-la como padrao no package.json, basta usar a notacao '--save' junto ao comando npm quando instalar as dependencias
+
+AXIOS e uma biblioteca usada apenas como exemplo
+"axios": "^0.21.1" - nesse comando, quando temos o '^', ele permite que a biblioteca atualize nas versoes minor (o numero do meio da versao)
+"axios": "~0.21.1" - quando temos o '~', ele permite que a biblioteca atualize a versao que tenha um fixed diferente (ultimo numero da versao)
+"axios": "0.21.1" - quando nao temos nenhum operador antes da versao significa que queremos exatamente a versao especificada
+
+quando criasmos um script no package.json e esse scrip nao e uma palavra reservada padrao, devemos esxecutar usando o comando 'npm run nnome_script' 
