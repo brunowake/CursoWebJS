@@ -6,7 +6,37 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+
+
+        section > span:nth-of-type(2){ 
+            color: yellow;
+            background-color: #f77;
+        } 
+
+        
+        /* section > span:nth-of-type(2) - seleciona o segundo elemento do tipo span dentro de section */
+        /* section > :nth-child(odd) todos os filhos impares de uma section */
+        /* section > :nth-child(even) todos os filhos pares de uma section */
+        /* span:nth-child(1) span que seja o primeiro filho de uma outra tag*/
+
+        /* [feira] seleciona por atributo, podemos utilizar por valor de atributo [feira=casa] 
+        caso o atributo tenha mais de um valor, no caso de [feira=escritorio], devemos utilizar o ~ antes do =.
+        [feira~=escritorio] dessa formas iremos procurar nos valores dos atributos por algo que seja igual a escritorio 
+        independente de quando valores os atributo tenha
+
+        [feira*=sa] - procura por todos os elementos com atributo feira valores que contenham 'sa'
+        
+        * /
+
+        /* p ~ ol seleciona a tag ol dentro de p sem a necessidade de estar colado  */
+
+        /* p + ul seleciona o elemento ul que esta ao lado de p, o uso do + sera sempre para mudar o estilo de um elemento colado a primeira tag */
+
+        /* #aninhado > section esse codigo nao funciona pois section nao estara diretamente relacionado com aninhado, o correto seria tirar o > */
+
+        /* #aninhado > div diretamente descendente do id aninhado */
+        
+        /* '*' seleciona todas os elementos */
     </style>
 </head>
 
@@ -29,11 +59,12 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
                     </section>
+                    
                 </div>
             </div>
         </div>

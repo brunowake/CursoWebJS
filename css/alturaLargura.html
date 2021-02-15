@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <title>Altura e Largura</title>
     <style>
+        html{
+            height: 100%;
+        }
         body {
             font-size: 40px;
+            height: 100%;
+            margin: 0;
             background-color: coral;
         }
 
@@ -17,6 +22,23 @@
         span {
             background-color: dodgerblue;
         }
+        span,div {
+            width: 49.70%; 
+            /* no display inline block os elementos ficam com um espaco minimo entre eles. entao se colocarmo width de 50% a linha quebra: 
+            para contornar esse problema, podemos colocar um comentario entre os dois elementos no html <!-- --> ou colocar o termino de de um elemento ligado no outro
+            ex: <div>
+
+                </div><div>
+                    
+                </div>
+            */
+            height: 250px;
+            height: 50%;
+            display: inline-block;
+        }
+        /* display inline nao considera altura e largura 
+        display block ou inline block considera altura e largura
+        */
     </style>
 </head>
 
